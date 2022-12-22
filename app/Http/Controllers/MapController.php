@@ -10,9 +10,11 @@ class MapController extends Controller
 {
     function location()
     {
-        $api = Http::get('https://api.npoint.io/f26432e9e880999eeb1b');
-        $map = json_decode($api);
-        return view::make('map')->with('api',$map);
+       // $api = Http::get('https://api.npoint.io/f26432e9e880999eeb1b');
+        //$map = json_decode($api);
+       // return $map->features;
+        return view::make('map');
         // return $api;
     }
 }
+//?
